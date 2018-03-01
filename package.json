@@ -30,9 +30,7 @@
     "nouislider": "9.2.0",
     "popper.js": "^1.12.3",
     "rxjs": "5.5.6",
-    "zone.js": "0.8.20"
-  },
-  "devDependencies": {
+    "zone.js": "0.8.20",
     "@angular/cli": "1.7.2",
     "@angular/compiler-cli": "5.2.7",
     "@angular/language-service": "5.2.7",
@@ -51,5 +49,8 @@
     "ts-node": "~3.0.4",
     "tslint": "5.9.1",
     "typescript": "2.6.2"
+  },
+  "devDependencies": {
+    
   }
 }
