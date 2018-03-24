@@ -1,4 +1,4 @@
-import {Component, OnInit, Renderer} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -17,7 +17,7 @@ export class ComponentsComponent implements OnInit {
   date: {year: number, month: number};
   model: NgbDateStruct;
 
-  constructor(private renderer: Renderer) {
+  constructor() {
   }
 
   isWeekend(date: NgbDateStruct) {
@@ -30,7 +30,6 @@ export class ComponentsComponent implements OnInit {
   }
 
   ngOnInit() {
-    const input_group_focus = document.getElementsByClassName('form-control');
     const input_group = document.getElementsByClassName('input-group');
     for (let i = 0; i < input_group.length; i++) {
       input_group[i].children[0].addEventListener('focus', function() {

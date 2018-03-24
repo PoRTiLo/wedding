@@ -8,7 +8,6 @@ import {Input, Component} from '@angular/core';
 
 export class NotificationComponent {
   @Input() public alerts: Array<IAlert> = [];
-  private backup: Array<IAlert>;
 
   constructor() {
     this.alerts.push({
@@ -20,7 +19,6 @@ export class NotificationComponent {
     }, {
       id: 4, type: 'danger', message: 'This is a danger alert', icon: 'nc-bell-55'
     });
-    this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
   }
 
   public closeAlert(alert: IAlert) {

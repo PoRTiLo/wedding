@@ -26,7 +26,7 @@ import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
   `
 })
 export class NgbdModalContent {
-  @Input() name;
+  @Input() name: string;
 
   constructor(public activeModal: NgbActiveModal) {
   }
