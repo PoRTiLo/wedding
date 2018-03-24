@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-basicelements',
+  selector: 'rt-app-basicelements',
   templateUrl: './basicelements.component.html',
   styleUrls: ['./basicelements.component.scss']
 })
 export class BasicelementsComponent implements OnInit {
-    simpleSlider = 40;
-    doubleSlider = [20, 60];
-    state_default = true;
+  simpleSlider = 40;
+  doubleSlider = [20, 60];
+  state_default = true;
 
-    constructor() { }
+  constructor() {
+  }
 
-    ngOnInit() {}
+  ngOnInit() {
+  }
 
 }

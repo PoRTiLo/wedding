@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { NucleoiconsComponent } from './nucleoicons.component';
+import {NucleoiconsComponent} from './nucleoicons.component';
 
 describe('NucleoiconsComponent', () => {
   let component: NucleoiconsComponent;
@@ -8,7 +8,7 @@ describe('NucleoiconsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NucleoiconsComponent ]
+      declarations: [NucleoiconsComponent]
     })
     .compileComponents();
   }));

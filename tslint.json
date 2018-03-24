@@ -12,7 +12,7 @@
     ],
     "curly": true,
     "eofline": true,
-    "forin": true,
+    "forin": false,
     "import-blacklist": [
       true,
       "rxjs"
@@ -26,13 +26,19 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      300
     ],
     "member-access": false,
     "member-ordering": [
       true,
-      "static-before-instance",
-      "variables-before-functions"
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
     ],
     "no-arg": true,
     "no-bitwise": true,
@@ -73,13 +79,14 @@
       "check-else",
       "check-whitespace"
     ],
-    "prefer-const": true,
+    "prefer-const": [true, {"destructuring": "all"}],
     "quotemark": [
       true,
       "single"
     ],
     "radix": true,
     "semicolon": [
+      true,
       "always"
     ],
     "triple-equals": [
@@ -110,13 +117,13 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "rt",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "rt",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
@@ -128,8 +135,7 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "no-access-missing-member": true,
-    "templates-use-public": true,
-    "invoke-injectable": true
+    "invoke-injectable": true,
+    "cyclomatic-complexity": [true, 20]
   }
 }

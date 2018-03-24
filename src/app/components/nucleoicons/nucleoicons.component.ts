@@ -1,13 +1,14 @@
-import { Component, OnInit, Inject, Renderer, ElementRef, OnDestroy } from '@angular/core';
+import {Component, OnInit, Renderer, ElementRef, OnDestroy} from '@angular/core';
 
 @Component({
-  selector: 'app-nucleoicons',
+  selector: 'rt-app-nucleoicons',
   templateUrl: './nucleoicons.component.html',
   styleUrls: ['./nucleoicons.component.scss']
 })
 export class NucleoiconsComponent implements OnInit, OnDestroy {
 
-  constructor( private element: ElementRef) {}
+  constructor(private element: ElementRef) {
+  }
 
   ngOnInit() {
     const body = document.getElementsByTagName('app-nucleoicons')[0];

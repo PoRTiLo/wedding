@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { BasicelementsComponent } from './basicelements.component';
+import {BasicelementsComponent} from './basicelements.component';
 
 describe('BasicelementsComponent', () => {
   let component: BasicelementsComponent;
@@ -8,7 +8,7 @@ describe('BasicelementsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BasicelementsComponent ]
+      declarations: [BasicelementsComponent]
     })
     .compileComponents();
   }));

@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { TypographyComponent } from './typography.component';
+import {TypographyComponent} from './typography.component';
 
 describe('TypographyComponent', () => {
   let component: TypographyComponent;
@@ -8,7 +8,7 @@ describe('TypographyComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TypographyComponent ]
+      declarations: [TypographyComponent]
     })
     .compileComponents();
   }));
