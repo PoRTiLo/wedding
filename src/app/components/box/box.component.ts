@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 
+// https://demo.onlinesvatba.cz
 @Component({
   selector: 'rt-box',
   templateUrl: './box.component.html',
