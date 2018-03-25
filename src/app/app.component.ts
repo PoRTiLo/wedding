@@ -1,6 +1,8 @@
 import {Component, OnInit, Renderer, ElementRef, ViewChild} from '@angular/core';
 import 'rxjs/add/operator/filter';
+
 import {Location} from '@angular/common';
+import {TranslateService} from '@ngx-translate/core';
 import {NavbarComponent} from './shared/navbar/navbar.component';
 
 @Component({
@@ -8,11 +10,18 @@ import {NavbarComponent} from './shared/navbar/navbar.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
 export class AppComponent implements OnInit {
   @ViewChild(NavbarComponent) navbar: NavbarComponent;
 
-  constructor(private renderer: Renderer, private element: ElementRef, public location: Location) {
+  constructor(private renderer: Renderer, private element: ElementRef, public location: Location,
+      private translate: TranslateService) {
+
+    translate.addLangs(['cs', 'en']);
+    // this language will be used as a fallback when a translation isn't found in the current language
+    translate.setDefaultLang('cs');
+
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    translate.use('cs');
   }
 
   ngOnInit() {

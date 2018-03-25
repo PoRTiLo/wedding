@@ -9,8 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
+    "strict": true, // "noImplicitAny": true, "noUnusedLocals": true, "strictFunctionTypes": true, "strictPropertyInitialization": true, "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
     "typeRoots": [

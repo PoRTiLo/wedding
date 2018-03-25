@@ -1,13 +1,11 @@
+<script src="../../../../omnium/target-enterprise-gui/target-enterprise-gui-web/src/main/webapp/app/lifesimulation/lifesimulation.module.ts"></script>
 <div class="wrapper">
   <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
     <div class="filter"></div>
     <div class="content-center">
       <div class="container">
         <div class="title-brand">
-          <div class="angular-logo">
-            <img src="assets/img/angular2-logo.png" alt="">
-          </div>
-          <h1 class="presentation-title">Paper Kit 2</h1>
+          <h1 class="presentation-title">wedding</h1>
           <div class="fog-low">
             <img src="assets/img/fog-low.png" alt="">
           </div>
@@ -16,17 +14,66 @@
           </div>
         </div>
 
-        <h2 class="presentation-subtitle text-center">Free Bootstrap 4 UI Kit for Angular 4+</h2>
+        <!--<h2 class="presentation-subtitle text-center">to wedding: {{remainingTime.days}} days,-->
+          <!--{{remainingTime.hours}} hours, {{remainingTime.minutes}} minutes, {{remainingTime.seconds}}s</h2>-->
+        <!--<h2 class="presentation-subtitle text-center" style="position: relative; z-index: 1" (click)="showPublicHolidayDetail = !showPublicHolidayDetail">-->
+            <!--public holiday: {{remainingTime.publicHolidays.length}}</h2>-->
+        <!--<div class="presentation-subtitle text-center" *ngIf="showPublicHolidayDetail">-->
+          <!--<div *ngFor="let holiday of remainingTime.publicHolidays">-->
+            <!--<span>{{holiday.date | date}}</span>: <span [translate]="holiday.key"></span>-->
+          <!--</div>-->
+        <!--</div>-->
+
       </div>
     </div>
-    <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
-    <h6 class=" category-absolute ml-auto mr-auto">Designed and coded by
-      <!-- <h6 class="category category-absolute">Designed and coded by -->
+    <!--<div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>-->
+    <div class="circe-left col-xs-6 col-sm-3 col-md-2 offset-md-1">
+      <h4 class="images-title">Circle Image</h4>
+      <img src="assets/img/faces/joe-gardner-2.jpg"
+          class="img-circle img-no-padding img-responsive"
+          alt="Rounded Image">
+      <p class="text-center">Joe Gardner</p>
+    </div>
+    <div class="circe-right col-xs-6  col-sm-3 col-md-2 offset-md-1">
+      <h4 class="images-title">Circle Image</h4>
+      <img src="assets/img/faces/joe-gardner-2.jpg"
+          class="img-circle img-no-padding img-responsive"
+          alt="Rounded Image">
+      <p class="text-center">Joe Gardner</p>
+    </div>
 
-      <a href="https://www.creative-tim.com" target="_blank">
-        <img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo">
-      </a>
-    </h6>
+    <section class="category-absolute ml-auto mr-auto">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 d-none d-md-block">
+            <p><span [translate]="'missing.days'"></span><i class="fa fa-heart"></i></p>
+            <p [translate]="'our.wedding'"></p>
+          </div>
+          <div class="d-block d-md-none ml-auto mr-auto">
+            <span [translate]="'missing.days'"></span><i class="fa fa-heart"></i> <span [translate]="'our.wedding'"></span>
+          </div>
+          <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-my-3"><p>{{remainingTime.days}}</p><p [translate]="'common.days'"></p></div>
+              <div class="col-my-3"><p>{{remainingTime.hours}}</p><p [translate]="'common.hours'"></p></div>
+              <div class="col-my-3"><p>{{remainingTime.minutes}}</p><p [translate]="'common.minutes'"></p></div>
+              <div class="col-my-3"><p>{{remainingTime.seconds}}</p><p [translate]="'common.seconds'"></p></div>
+            </div>
+            <!--<div class="count-down">-->
+              <!--<div id="countdown" class="is-countdown"><span class="countdown-row countdown-show4"><span class="countdown-section"><span class="countdown-amount">817</span><span class="countdown-period">Days</span></span><span class="countdown-section"><span class="countdown-amount">5</span><span class="countdown-period">Hours</span></span><span class="countdown-section"><span class="countdown-amount">35</span><span class="countdown-period">Minutes</span></span><span class="countdown-section"><span class="countdown-amount">4</span><span class="countdown-period">Seconds</span></span></span></div>-->
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<h6 class="category-absolute ml-auto mr-auto">Designed and coded by-->
+      <!--&lt;!&ndash; <h6 class="category category-absolute">Designed and coded by &ndash;&gt;-->
+
+      <!--<a href="https://www.creative-tim.com" target="_blank">-->
+        <!--<img src="assets/img/creative-tim-white-slim2.png" class="creative-tim-logo">-->
+      <!--</a>-->
+    <!--</h6>-->
   </div>
   <div class="main">
     <rt-app-components></rt-app-components>
