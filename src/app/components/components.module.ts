@@ -6,7 +6,9 @@ import {NouisliderModule} from 'ng2-nouislider';
 import {JWBootstrapSwitchModule} from 'jw-bootstrap-switch-ng2';
 
 import {BasicelementsComponent} from './basicelements/basicelements.component';
+import {BoxComponent} from './box/box.component';
 import {NavigationComponent} from './navigation/navigation.component';
+import {ProgramComponent} from './program/program.component';
 import {TypographyComponent} from './typography/typography.component';
 import {NucleoiconsComponent} from './nucleoicons/nucleoicons.component';
 import {ComponentsComponent} from './components.component';
@@ -17,9 +19,10 @@ import {NgbdModalContent} from './modal/modal.component';
 @NgModule({
   imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule],
   declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
-      NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent],
+      NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
+      ProgramComponent, BoxComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent]
 })
 export class ComponentsModule {
 }

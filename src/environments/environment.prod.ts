@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  main: 'main2.ts'
 };
