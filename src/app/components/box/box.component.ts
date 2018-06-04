@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 // https://demo.onlinesvatba.cz
 @Component({
@@ -7,6 +7,10 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./box.component.scss']
 })
 export class BoxComponent implements OnInit {
+
+  @Input() icon: string;
+  @Input() frontKey: string;
+  @Input() backKey: string;
 
   ngOnInit(): void {
   }

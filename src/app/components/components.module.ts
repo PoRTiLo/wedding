@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {FormsModule} from '@angular/forms';
+import {TranslateModule} from '@ngx-translate/core';
 import {NouisliderModule} from 'ng2-nouislider';
 import {JWBootstrapSwitchModule} from 'jw-bootstrap-switch-ng2';
 
@@ -17,7 +18,7 @@ import {NgbdModalComponent} from './modal/modal.component';
 import {NgbdModalContent} from './modal/modal.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule],
+  imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule, TranslateModule],
   declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
       NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
       ProgramComponent, BoxComponent],

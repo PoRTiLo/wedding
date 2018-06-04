@@ -1,10 +1,12 @@
-<div class="container">
-  <div class="front">
-    <div class="title">8:30</div>
-    <div class="icon">8:30</div>
-  </div>
-  <div class="back">
-    <div class="title">8:30</div>
-    <div class="icon">8:30</div>
+<div class="box">
+  <div class="box-holder">
+    <div class="box-content front">
+      <div class="box-title" [translate]="frontKey"></div>
+      <div class="box-icon" [ngClass]="icon"></div>
+    </div>
+    <div class="box-content back">
+      <div class="box-title" [translate]="frontKey"></div>
+      <div class="box-text" [translate]="backKey"></div>
+    </div>
   </div>
 </div>

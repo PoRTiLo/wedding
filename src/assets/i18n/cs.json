@@ -10,5 +10,18 @@
   "common.minutes": "MINUT",
   "common.seconds": "SEKUND",
   "missing.days": "Do naší svatby ",
-  "our.wedding": "zbývá"
+  "our.wedding": "zbývá",
+  "schedule.1.time": "6:00",
+  "schedule.1.text": "prijezd zenich",
+  "schedule.2.time": "6:30",
+  "schedule.2.text": "prijezd zenich",
+  "schedule.3.time": "7:00",
+  "schedule.3.text": "prijezd zenich",
+  "schedule.4.time": "8:00",
+  "schedule.4.text": "prijezd zenich",
+  "schedule.5.time": "9:00",
+  "schedule.5.text": "prijezd zenich",
+  "schedule.6.time": "10:00",
+  "schedule.6.text": "prijezd zenich"
+
 }

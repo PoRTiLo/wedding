@@ -1,3 +1,4 @@
+import {HttpClient} from '@angular/common/http';
 import {Component, OnInit} from '@angular/core';
 import {Constants, PublicHoliday} from '../const';
 
@@ -33,11 +34,17 @@ export class HomeComponent implements OnInit {
     left: true, middle: false, right: false
   };
 
-  constructor() {
+  constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
     this.initTimer();
+//    setInterval(() => {
+//      this.http.get('https://wedding-rt.herokuapp.com/home');
+//      this.http.get('www.seznam.cz');
+//      console.log('setInterval');
+//    }, 30000); // every 5 minutes (300000)
+
   }
 
   private initTimer() {
