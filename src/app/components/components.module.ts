@@ -8,6 +8,7 @@ import {JWBootstrapSwitchModule} from 'jw-bootstrap-switch-ng2';
 
 import {BasicelementsComponent} from './basicelements/basicelements.component';
 import {BoxComponent} from './box/box.component';
+import {RtMapsComponent} from './maps/maps.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {ProgramComponent} from './program/program.component';
 import {TypographyComponent} from './typography/typography.component';
@@ -21,9 +22,9 @@ import {NgbdModalContent} from './modal/modal.component';
   imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule, TranslateModule],
   declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
       NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
-      ProgramComponent, BoxComponent],
+      ProgramComponent, BoxComponent, RtMapsComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent, ProgramComponent, BoxComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent, RtMapsComponent]
 })
 export class ComponentsModule {
 }
