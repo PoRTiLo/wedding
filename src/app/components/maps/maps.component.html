@@ -1,5 +1,21 @@
-<section class="section section--dark views-row views-row-2 views-row-even ">
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-3 button" [class.active]="mapType === 'church'" (click)="activeMap('church')">
+        <i class="fa fa-church"></i> <span [translate]="'maps.church'"></span>
+      </div>
+      <div class="col-sm-3 button" [class.active]="mapType === 'feast'" (click)="activeMap('feast')">
+        <i class="fas fa-utensils"></i> <span [translate]="'maps.feast'"></span>
+      </div>
+      <div class="col-sm-3 button" [class.active]="mapType === 'route'" (click)="activeMap('route')">
+        <i class="fas fa-car"></i> <span [translate]="'maps.route'"></span>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>
   <div class="text-center">
-    <div #gmap style="width:100%; height:40rem;"></div>
+    <div #gmap class="g-map"></div>
   </div>
 </section>

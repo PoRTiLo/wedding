@@ -22,6 +22,8 @@
   "schedule.5.time": "9:00",
   "schedule.5.text": "prijezd zenich",
   "schedule.6.time": "10:00",
-  "schedule.6.text": "prijezd zenich"
-
+  "schedule.6.text": "prijezd zenich",
+  "maps.feast": "hostina",
+  "maps.church": "obřad",
+  "maps.route": "z obřadu na hostinu"
 }
