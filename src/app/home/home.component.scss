@@ -1,4 +1,12 @@
+@import '../../variables';
 
 .page-header.section-dark {
   background-image: url("../../assets/img/DSC_2245-web.jpg");
+}
+.timer {
+  font-size: 1.3em;
+  p {
+    font-weight: 600;
+    color: $color-red;
+  }
 }

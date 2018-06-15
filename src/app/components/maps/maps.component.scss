@@ -1,13 +1,14 @@
+@import '../../../variables';
 
 .button {
-  border: 1px solid red;
+  border: 1px solid $color-red;
   cursor: pointer;
   font-weight: 600;
   padding: 0.5rem 18px;
   line-height: 1.75;
   text-align: center;
   &.active {
-    background-color: red;
+    background-color: $color-red;
     color: white;
   }
   & > span {

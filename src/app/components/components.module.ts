@@ -17,14 +17,15 @@ import {ComponentsComponent} from './components.component';
 import {NotificationComponent} from './notification/notification.component';
 import {NgbdModalComponent} from './modal/modal.component';
 import {NgbdModalContent} from './modal/modal.component';
+import {InfoComponent} from "./info/info.component";
 
 @NgModule({
   imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule, TranslateModule],
   declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
       NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
-      ProgramComponent, BoxComponent, RtMapsComponent],
+      ProgramComponent, BoxComponent, RtMapsComponent, InfoComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent, ProgramComponent, BoxComponent, RtMapsComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent, RtMapsComponent, InfoComponent]
 })
 export class ComponentsModule {
 }

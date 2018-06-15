@@ -1,12 +1,17 @@
 <div class="box">
   <div class="box-holder">
     <div class="box-content front">
-      <div class="box-title" [translate]="frontKey"></div>
-      <div class="box-icon" [ngClass]="icon"></div>
+      <div class="box-title" [translate]="time"></div>
+      <i class="box-icon fas" [ngClass]="icon"></i>
     </div>
     <div class="box-content back">
-      <div class="box-title" [translate]="frontKey"></div>
-      <div class="box-text" [translate]="backKey"></div>
+      <div class="row">
+        <div class="col-sm-12 title" [translate]="title"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text" [translate]="text">
+        </div>
+      </div>
     </div>
   </div>
 </div>

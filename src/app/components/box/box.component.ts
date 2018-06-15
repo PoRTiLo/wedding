@@ -9,8 +9,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class BoxComponent implements OnInit {
 
   @Input() icon: string;
-  @Input() frontKey: string;
-  @Input() backKey: string;
+  @Input() time: string;
+  @Input() title: string;
+  @Input() text: string;
 
   ngOnInit(): void {
   }

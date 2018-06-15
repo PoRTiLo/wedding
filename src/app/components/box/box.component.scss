@@ -1,3 +1,5 @@
+@import '../../../variables';
+
 .box {
   width: 100%;
   height: 100%;
@@ -16,7 +18,6 @@
   perspective: 1000px;
 }
 .box-content {
-  color: yellow;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -28,25 +29,36 @@
   backface-visibility: hidden;
   .box-title {
     position: absolute;
-    margin: 1em;
+    margin: 0 0 0 1em;
     line-height: 2em;
+    font-size: 2em;
     font-weight: 500;
   }
   .box-icon {
+    //width: 100%;
+    //height: 100%;
+    //background: no-repeat center;
+    //background-size: 40% auto;
+    //&.CAKE {
+    //  background-image: url("../../../assets/img/icon/cake.png");
+    //}
+    //&.CAMERA {
+    //  background-image: url("../../../assets/img/icon/camera.svg");
+    //}
+    font-size: 10em;
+    /* line-height: 10em; */
+    position: absolute;
+    left: 00%;
+    top: 15%;
     width: 100%;
     height: 100%;
-    background: no-repeat center;
-    background-size: auto;
-    &.CAKE {
-      background-image: url("../../../assets/img/icon/cake.png");
-    }
   }
 }
 .front {
   z-index: 3;
-  color: #fff;
+  color: $color-white;
   text-align: center;
-  background: red;
+  background: $color-red;
 }
 .box-holder:hover > .front {
   z-index: 0;
@@ -60,15 +72,32 @@
   transform: rotateY(0deg);
 }
 .back {
-  color: #fff;
+  color: $color-white;
   text-align: center;
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: #34495e;
-  .box-text {
+  background: $color-blue;
+  .text, .title {
     color: white;
     width: 100%;
     height: 100%;
+
+  }
+  .title {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .text {
+    margin-top: 1.5em;
+  }
+}
+
+// predefined style, parent must be 'rt-info'
+:host-context(rt-info) .back {
+  background: $color-white;
+  color: $color-blue;
+  .text, .title {
+    color: $color-blue;
   }
 }

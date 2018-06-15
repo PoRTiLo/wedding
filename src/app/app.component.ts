@@ -28,13 +28,13 @@ export class AppComponent implements OnInit {
     const navbar: HTMLElement = this.element.nativeElement.children[0].children[0];
     this.renderer.listenGlobal('window', 'scroll', () => {
       const number = window.scrollY;
-      if (number > 150 || window.pageYOffset > 150) {
-        // add logic
-        navbar.classList.remove('navbar-transparent');
-      } else {
-        // remove logic
-        navbar.classList.add('navbar-transparent');
-      }
+      // if (number > 150 || window.pageYOffset > 150) {
+      //   // add logic
+      //   navbar.classList.remove('navbar-transparent');
+      // } else {
+      //   // remove logic
+      //   navbar.classList.add('navbar-transparent');
+      // }
     });
     const ua = window.navigator.userAgent;
     const trident = ua.indexOf('Trident/');
