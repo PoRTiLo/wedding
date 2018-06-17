@@ -11,7 +11,6 @@ import {BoxComponent} from './box/box.component';
 import {RtMapsComponent} from './maps/maps.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {ProgramComponent} from './program/program.component';
-import {TypographyComponent} from './typography/typography.component';
 import {NucleoiconsComponent} from './nucleoicons/nucleoicons.component';
 import {ComponentsComponent} from './components.component';
 import {NotificationComponent} from './notification/notification.component';
@@ -21,11 +20,11 @@ import {InfoComponent} from "./info/info.component";
 
 @NgModule({
   imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule, TranslateModule],
-  declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
+  declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent,
       NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
-      ProgramComponent, BoxComponent, InfoComponent],
+      ProgramComponent, BoxComponent, InfoComponent, RtMapsComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent, ProgramComponent, BoxComponent, InfoComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent, InfoComponent, RtMapsComponent]
 })
 export class ComponentsModule {
 }
