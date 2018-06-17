@@ -23,9 +23,9 @@ import {InfoComponent} from "./info/info.component";
   imports: [CommonModule, FormsModule, NgbModule, NouisliderModule, JWBootstrapSwitchModule, TranslateModule],
   declarations: [ComponentsComponent, BasicelementsComponent, NavigationComponent, TypographyComponent,
       NucleoiconsComponent, NotificationComponent, NgbdModalComponent, NgbdModalContent,
-      ProgramComponent, BoxComponent, RtMapsComponent, InfoComponent],
+      ProgramComponent, BoxComponent, InfoComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent, ProgramComponent, BoxComponent, RtMapsComponent, InfoComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent, InfoComponent]
 })
 export class ComponentsModule {
 }
