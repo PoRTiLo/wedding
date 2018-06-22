@@ -7,7 +7,7 @@ class NavbarText {
   label: string
 }
 
-const NAVBAR_SECTIONS = 4;
+const NAVBAR_SECTIONS = 5;
 
 @Component({
   selector: 'rt-app-navbar',
@@ -70,9 +70,10 @@ export class NavbarComponent implements OnInit {
     this.navbarTexts = [];
     for (let i = 0; i < NAVBAR_SECTIONS; i++) {
       const navbarText = new NavbarText();
-      navbarText.title = this.translate.instant(`navbar.section.${i}`);
-      navbarText.label = this.translate.instant(`navbar.section.${i}`);
+      navbarText.title = this.translate.instant(`navbar.section.${i}.title`);
+      navbarText.label = this.translate.instant(`navbar.section.${i}.label`);
       this.navbarTexts.push(navbarText);
+      console.log(navbarText);
     }
 
   }

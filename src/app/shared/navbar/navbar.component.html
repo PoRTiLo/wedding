@@ -25,29 +25,29 @@
               href="https://twitter.com/CreativeTim"
               target="_blank">
             <i class="fa fa-church"></i>
-            <p class="d-lg-none">navbarTexts[0].label</p>
+            <p class="d-lg-none">{{navbarTexts[0].label}}</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link"
               rel="tooltip"
-              title="Like us on Facebook"
+              title="{{navbarTexts[1].title}}"
               data-placement="bottom"
               href="https://www.facebook.com/CreativeTim"
               target="_blank">
             <i class="fa fa-car"></i>
-            <p class="d-lg-none">Facebook</p>
+            <p class="d-lg-none">navbarTexts[1].label</p>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link"
               rel="tooltip"
-              title="Follow us on Instagram"
+              title="{{navbarTexts[2].title}}"
               data-placement="bottom"
               href="https://www.instagram.com/CreativeTimOfficial"
               target="_blank">
             <i class="fa fa-church"></i>
-            <p class="d-lg-none">Instagram</p>
+            <p class="d-lg-none">navbarTexts[2].label</p>
           </a>
         </li>
         <li class="nav-item">
@@ -55,28 +55,16 @@
               rel="tooltip"
               title="Star on GitHub"
               data-placement="bottom"
-              href="https://www.github.com/CreativeTimOfficial/pk2-angular"
+              href="{{navbarTexts[3].title}}"
               target="_blank">
             <i class="fa fa-church"></i>
-            <p class="d-lg-none">GitHub</p>
+            <p class="d-lg-none">navbarTexts[3].label</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="http://pk2-angular.creative-tim.com/documentation/tutorial"
               class="nav-link"
-              target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
-        </li>
-        <!-- <li class="nav-item" *ngIf="isHome()">
-            <a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round disabled">Upgrade to Pro</a>
-        </li> -->
-        <li class="nav-item" *ngIf="!isHome()">
-          <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-          <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/creativetimofficial/pk-free-angular/issues?ref=pk2-free-local"
-              target="_blank"
-              class="nav-link">Have an issue</a>
+              target="_blank"><i class="nc-icon nc-book-bookmark"></i> {{navbarTexts[4].label}}</a>
         </li>
       </ul>
     </div>

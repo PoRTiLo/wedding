@@ -9,13 +9,13 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {AppRoutingModule} from './app.routing';
 
 import {AppComponent} from './app.component';
-import {SignupComponent} from './signup/signup.component';
 import {LandingComponent} from './landing/landing.component';
 import {ProfileComponent} from './profile/profile.component';
 import {NavbarComponent} from './shared/navbar/navbar.component';
 import {FooterComponent} from './shared/footer/footer.component';
 
 import {HomeModule} from './home/home.module';
+import {SharedModule} from "./shared/shared.module";
 
 // required for AOT compilation
 export function createTranslateLoader(http: HttpClient) {
@@ -24,10 +24,11 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, LandingComponent, ProfileComponent, NavbarComponent, FooterComponent],
+  declarations: [AppComponent, LandingComponent, ProfileComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
+    SharedModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
