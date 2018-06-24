@@ -21,8 +21,8 @@
     font-size: 26px;
     margin: 2px;
     padding-right: 3px;
-    font: normal normal normal 23px/1 FontAwesome !important;
-    content: "\f104" !important;
+    font: normal normal normal 23px/1 'Font Awesome 5 Free';
+    content: "\f104";
   }
 }
 
@@ -34,8 +34,8 @@
     font-size: 26px;
     margin: 2px;
     padding-left: 2px;
-    font: normal normal normal 23px/1 FontAwesome !important;
-    content: "\f105" !important;
+    font: normal normal normal 23px/1 'Font Awesome 5 Free';
+    content: "\f105";
   }
 }
 
@@ -83,11 +83,33 @@
 
 .carousel-inner {
   .carousel-item {
-    img {
+    .image {
       border-radius: $border-radius-extreme;
       box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
       height: 400px;
       width: 100%;
+      background-size: 100% auto;
+      //background-size: cover;
+      background-repeat: none;
+      &.first {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+      &.second {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+      &.third {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+      &.fourth {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+      &.finfth {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+      &.sixth {
+        background-image: url("../../assets/img/IMG_4456.JPG");
+      }
+
     }
   }
 }

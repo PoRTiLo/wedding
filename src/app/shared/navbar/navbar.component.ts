@@ -70,11 +70,9 @@ export class NavbarComponent implements OnInit {
     this.navbarTexts = [];
     for (let i = 0; i < NAVBAR_SECTIONS; i++) {
       const navbarText = new NavbarText();
-      navbarText.title = this.translate.instant(`navbar.section.${i}.title`);
-      navbarText.label = this.translate.instant(`navbar.section.${i}.label`);
+      navbarText.title = `navbar.section.${i}.title`;
+      navbarText.label = `navbar.section.${i}.label`;
       this.navbarTexts.push(navbarText);
-      console.log(navbarText);
     }
-
   }
 }
