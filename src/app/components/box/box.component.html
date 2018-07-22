@@ -1,11 +1,14 @@
 <div class="box">
   <div class="box-holder">
-    <div class="box-content front">
-      <div class="box-title" [translate]="time"></div>
+    <div class="box-content front" *ngIf="icon != null">
+      <div class="box-time" [translate]="time"></div>
       <i class="box-icon fas" [ngClass]="icon"></i>
     </div>
+    <div class="box-content front" *ngIf="icon == null">
+      <div class="box-title" [translate]="time"></div>
+    </div>
     <div class="box-content back">
-      <div class="row">
+      <div class="row" *ngIf="title != null">
         <div class="col-sm-12 title" [translate]="title"></div>
       </div>
       <div class="row">

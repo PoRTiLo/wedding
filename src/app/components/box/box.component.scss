@@ -27,7 +27,7 @@
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  .box-title {
+  .box-time {
     position: absolute;
     margin: 0 0 0 1em;
     line-height: 2em;
@@ -35,13 +35,25 @@
     font-weight: 500;
   }
   .box-icon {
-    font-size: 10em;
+    font-size: 8em;
     /* line-height: 10em; */
     position: absolute;
-    left: 00%;
-    top: 15%;
+    left: 0%;
+    top: 30%;
     width: 100%;
     height: 100%;
+  }
+  .box-title {
+    //line-height: 2em;
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.5em;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 .front {
@@ -76,10 +88,11 @@
   }
   .title {
     font-size: 1.5em;
-    margin-top: 1em;
+    margin: 1em 0 0 0;
   }
   .text {
-    margin-top: 1.5em;
+    //margin-top: 1.5em;
+    padding: 1em 32px 0 32px;
   }
 }
 

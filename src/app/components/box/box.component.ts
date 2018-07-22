@@ -10,6 +10,7 @@ export class BoxComponent implements OnInit {
 
   @Input() icon: string;
   @Input() time: string;
+  @Input() label: string;
   @Input() title: string;
   @Input() text: string;
 
