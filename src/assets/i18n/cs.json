@@ -29,7 +29,8 @@
   "schedule.2.text": "ranní hygiena, oblékání, ranní štamprle",
   "schedule.3.time": "9:50 - 10:20",
   "schedule.3.title": "Zdobení aut a značkování svatebčanů",
-  "schedule.3.text": "V případě zájmu o nazdobení vašeho auta, doražte dle vaší rodinné přísluštnosti nebo vašich sympatií k nevěstě nebo ženichovi. V daný čas bude probíhat také značkování svatebčanů, které bude pokračovat před kostelem.",
+  "schedule.3.text.long": "V případě zájmu o nazdobení vašeho auta, doražte dle vaší rodinné přísluštnosti nebo vašich sympatií k nevěstě nebo ženichovi. V daný čas bude probíhat také značkování svatebčanů, které bude pokračovat před kostelem.",
+  "schedule.3.text": "V daný čas bude u nevěsty a ženicha probíhat dobrovolné značkování aut a svatebčanů, které bude pokračovat před kostelem.",
   "schedule.4.time": "10:20 - 10:30",
   "schedule.4.title": "Odjezd na obřad",
   "schedule.4.text": "synchronizované nalodění do vozidel a odjezd na obřad",
@@ -78,7 +79,7 @@
   "maps.feast": "hostina",
   "maps.church": "obřad",
   "maps.route": "z obřadu na hostinu",
-  "testps": " Reálné časy se mohou lišit od harmonogramu cca o 2 hodiny. Děkujem za pochopení :D",
+  "testps": "Reálné časy se mohou lišit od harmonogramu cca o 2 hodiny. Děkujem za pochopení :D",
   "above.program": "Vítejte na našem svatebním webu, který jsme si pro vás připravili :). Snad tady naleznete potřebné informace o našem velkém dnu. Už dopředu se omlouváme za případné chyby a nedostatky. Svatbu plánujeme poprvé a snad naposledy. Moc se na vás na všechny těšíme a věříme, že si spolu celý den pořádně a ve zdraví užijeme. :) "
 }
 

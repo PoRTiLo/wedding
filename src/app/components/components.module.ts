@@ -6,7 +6,7 @@ import {TranslateModule} from '@ngx-translate/core';
 import {JWBootstrapSwitchModule} from 'jw-bootstrap-switch-ng2';
 
 import {BoxComponent} from './box/box.component';
-// import {RtMapsComponent} from './maps/maps.component';
+import {RtMapsComponent} from './maps/maps.component';
 import {NavigationComponent} from './navigation/navigation.component';
 import {ProgramComponent} from './program/program.component';
 import {ComponentsComponent} from './components.component';
@@ -18,9 +18,9 @@ import {InfoComponent} from "./info/info.component";
   imports: [CommonModule, FormsModule, NgbModule, JWBootstrapSwitchModule, TranslateModule],
   declarations: [ComponentsComponent, NavigationComponent,
       NgbdModalComponent, NgbdModalContent,
-      ProgramComponent, BoxComponent, InfoComponent],
+      ProgramComponent, BoxComponent, InfoComponent, RtMapsComponent],
   entryComponents: [NgbdModalContent],
-  exports: [ComponentsComponent, ProgramComponent, BoxComponent, InfoComponent]
+  exports: [ComponentsComponent, ProgramComponent, BoxComponent, InfoComponent, RtMapsComponent]
 })
 export class ComponentsModule {
 }
