@@ -2,7 +2,8 @@
   <!-- positions -->
   <div class="container">
     <div class="row">
-      <div class="col-sm-1">
+      <div class="col-sm-3 button" [class.active]="mapType === 'fiance'" (click)="activeMap('fiance')">
+        <i class="fa fa-home"></i> <span [translate]="'maps.fiance'"></span>
       </div>
       <div class="col-sm-3 button" [class.active]="mapType === 'church'" (click)="activeMap('church')">
         <i class="fa fa-church"></i> <span [translate]="'maps.church'"></span>
@@ -13,7 +14,6 @@
       <div class="col-sm-3 button" [class.active]="mapType === 'route'" (click)="activeMap('route')">
         <i class="fas fa-car"></i> <span [translate]="'maps.route'"></span>
       </div>
-      <div class="col-sm-1"></div>
     </div>
   </div>
   <!-- map -->
@@ -21,12 +21,12 @@
     <div #gmap class="g-map"></div>
   </div>
   <!-- address -->
-  <div class="container">
-    <div class="row" [ngSwitch]="mapType">
-      <div class="col-sm-6" *ngSwitchCase="'fiance'"> fiance </div>
-      <div class="col-sm-6" *ngSwitchCase="'church'"> church </div>
-      <div class="col-sm-6" *ngSwitchCase="'feast'"> feast </div>
-      <div class="col-sm-6" *ngSwitchCase="'route'"> route </div>
-    </div>
-  </div>
+  <!--<div class="container">-->
+    <!--<div class="row" [ngSwitch]="mapType">-->
+      <!--<div class="col-sm-6" *ngSwitchCase="'fiance'"> fiance </div>-->
+      <!--<div class="col-sm-6" *ngSwitchCase="'church'"> church </div>-->
+      <!--<div class="col-sm-6" *ngSwitchCase="'feast'"> feast </div>-->
+      <!--<div class="col-sm-6" *ngSwitchCase="'route'"> route </div>-->
+    <!--</div>-->
+  <!--</div>-->
 </section>
